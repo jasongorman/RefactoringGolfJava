@@ -1,0 +1,24 @@
+public class Title {
+
+	private String name;
+	private String donorId;
+
+	public Title(String name, String donorId) {
+		super();
+		this.name = name;
+		this.donorId = donorId;
+	}
+
+	protected int getCopyCount(Object[] title) {
+		return (int)title[2];
+	}
+
+	protected String getDonor(Object[] title) {
+		return donorId;
+	}
+
+	protected String getTitleName(Object[] title) {
+		return name;
+	}
+
+}

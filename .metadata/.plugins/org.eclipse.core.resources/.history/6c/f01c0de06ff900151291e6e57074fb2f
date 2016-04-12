@@ -1,0 +1,10 @@
+
+public class FootballData {
+
+	public static Game[] getAllPlayed() {
+		Game[] played = new Game[10];
+		played[0] = new Game("Liverpool", 2, "Everton", 0);
+		return played;
+	}
+
+}

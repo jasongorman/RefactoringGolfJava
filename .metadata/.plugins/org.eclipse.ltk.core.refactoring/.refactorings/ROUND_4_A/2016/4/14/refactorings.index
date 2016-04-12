@@ -1,0 +1,11 @@
+1459929101125	Extract local variable 'donatedTitle'
+1459929168508	Extract method 'getRentalCopyCount'
+1459929194054	Rename local variable 'donatedTitle'
+1459929261593	Extract method 'getTitleName'
+1459929279221	Rename local variable 'donatedTitle'
+1459929524566	Extract method 'getDonorId'
+1459930678089	Inline method 'getTitleName'
+1459930688009	Inline method 'getDonorId'
+1459930696913	Inline method 'getRentalCopyCount'
+1459930844517	Delete element
+1459933551015	Rename local variable 'donorMembershipId'

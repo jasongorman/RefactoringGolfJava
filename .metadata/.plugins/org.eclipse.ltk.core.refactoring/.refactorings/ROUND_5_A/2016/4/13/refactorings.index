@@ -1,0 +1,7 @@
+1459673141383	Move compilation unit
+1459673179682	Rename type 'test'
+1459673230829	Rename type 'MathTests'
+1459673446456	Inline local variable 'c'
+1459673515169	Extract constant 'ERROR_TOLERANCE'
+1459673524520	Inline local variable 'epsilon'
+1459674092762	Rename local variable 't'

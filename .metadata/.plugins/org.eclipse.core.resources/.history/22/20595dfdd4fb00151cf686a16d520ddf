@@ -1,0 +1,31 @@
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+
+public class Library {
+	
+	private Map<String, Title> titles = new HashMap<String, Title>();
+
+	public Map<String, Title> getTitles() {
+		return titles;
+	}
+
+	public void donate(Title title) {
+		titles.put(title.getTitleName(null), new Title(titleName, donorMembershipId));
+	}
+
+	public Collection<Title> getTitlesDonatedByMember(String donorMembershipId) {
+		Collection<Title> allTitles = titles.values();
+		List<Title> memberTitles = new ArrayList<Title>();
+		for (Title title : allTitles) {
+			if(title.getDonor(null).equals(donorMembershipId)){
+				memberTitles.add(title);
+			}
+		}
+		return memberTitles;
+	}
+
+}

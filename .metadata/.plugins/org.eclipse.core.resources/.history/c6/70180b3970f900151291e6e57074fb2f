@@ -1,0 +1,12 @@
+
+public class FootballScoreStats {
+
+	public int teamTotal(String teamName) {
+		int total = 0;
+		Game[] played = FootballData.getAllPlayed();
+		for (Game game : played) {
+			if(game.getHomeTeam() == teamName)
+		}
+	}
+
+}

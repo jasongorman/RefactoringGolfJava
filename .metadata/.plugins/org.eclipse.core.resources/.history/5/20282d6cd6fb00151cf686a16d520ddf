@@ -1,0 +1,26 @@
+public class Title {
+
+	
+	private String name;
+	private int copyCount = 1;
+	private Member donor;
+
+	public Title(String name, String donorId, Member donor) {
+		this.name = name;
+		this.donorId = donorId;
+		this.donor = donor;
+	}
+
+	protected int getCopyCount() {
+		return copyCount;
+	}
+
+	protected String getDonor() {
+		return donor.getId();
+	}
+
+	protected String getTitleName() {
+		return name;
+	}
+
+}

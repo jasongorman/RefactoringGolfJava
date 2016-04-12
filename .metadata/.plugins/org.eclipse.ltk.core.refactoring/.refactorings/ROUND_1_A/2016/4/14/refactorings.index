@@ -1,0 +1,17 @@
+1459938996270	Rename type 'ZzubZzifTests'
+1459939005431	Rename type 'Iccanobif'
+1459939055415	Rename type 'IccanobifTests'
+1459939073979	Rename method 'blah'
+1459939101229	Rename method 'zzubZzif'
+1459939158265	Rename method 'lookup'
+1459939273085	Extract local variable 'expectedIndex'
+1459939288224	Extract local variable 'fibonacci'
+1459939299401	Convert local variable 'expectedIndex' to field
+1459939326917	Convert local variable 'fibonacci' to field
+1459939399272	Introduce parameter for 'FibonacciIndexTests'
+1459939415860	Introduce parameter for 'FibonacciIndexTests'
+1459939435041	Rename local variable 'expected'
+1459939448611	Rename local variable 'numberToFind'
+1459939472750	Rename method 'indexOfZeroIsZero'
+1459942111552	Extract superclass 'FibonacciIndexer'
+1459942194150	Delete element

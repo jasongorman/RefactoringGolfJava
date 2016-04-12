@@ -1,0 +1,40 @@
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+
+public class FibonacciIndexTests {
+
+	private final int expectedIndex;
+	private int fibonacci;
+
+
+	public FibonacciIndexTests() {
+		expectedIndex = 0;
+	}
+
+	@Test
+	public void indexOfZeroIsZero() {
+		fibonacci = 0;
+		assertEquals(expectedIndex, findIndexOf(fibonacci));
+	}
+	
+	@Test
+	public void indexOfOneIsOne() {
+		assertEquals(1, findIndexOf(1));
+	}
+	
+	@Test
+	public void indexOfTwoIsThree() {
+		assertEquals(3, findIndexOf(2));
+	}
+	
+
+	private int findIndexOf(int fibonacci) {
+		if(fibonacci < 2){
+			return fibonacci;
+		} 
+		return 3;
+	}
+
+}

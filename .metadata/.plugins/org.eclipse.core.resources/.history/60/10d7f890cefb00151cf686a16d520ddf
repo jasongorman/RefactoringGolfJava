@@ -1,0 +1,22 @@
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+
+public class Library {
+	
+	private Map<String, Object[]> titles = new HashMap<String, Object[]>();
+
+	public Map<String, Object[]> getTitles() {
+		return titles;
+	}
+
+	public void donate(String titleName, String donorMembershipId) {
+		titles.put(titleName, new Object[]{titleName, donorMembershipId, 1});
+	}
+
+	public List<Object[]> getTitlesDonatedByMember(String donorMembershipId) {
+		return null;
+	}
+
+}

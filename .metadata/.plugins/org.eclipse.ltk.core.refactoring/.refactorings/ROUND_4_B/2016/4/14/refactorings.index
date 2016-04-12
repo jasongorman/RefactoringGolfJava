@@ -1,0 +1,26 @@
+1459930892190	Move compilation unit
+1459930932922	Extract method 'getTitleName'
+1459930954416	Extract method 'getDonor'
+1459930972540	Extract method 'getCopyCount'
+1459930991484	Extract superclass 'Title'
+1459931060679	Extract local variable 'title'
+1459931273855	Change method 'Title'
+1459931531058	Extract local variable 'copyCount'
+1459931547170	Convert local variable 'copyCount' to field
+1459931712566	Change method 'donate'
+1459931740880	Move compilation unit
+1459932779168	Change method 'donate'
+1459932820608	Inline local variable 'allTitles'
+1459932853948	Change method 'getCopyCount'
+1459932863845	Change method 'getDonor'
+1459932873620	Change method 'getTitleName'
+1459932919774	Convert local variable 'donorMembershipId' to field
+1459933002301	Extract superclass 'Member'
+1459933126207	Change method 'Title'
+1459933145141	Extract local variable 'donor'
+1459933340819	Rename method 'getDonorMembershipId'
+1459933353861	Rename field 'donorMembershipId'
+1459933459114	Change method 'Title'
+1459933502730	Extract local variable 'donorId'
+1459933608868	Rename method 'getDonor'
+1459933624945	Move compilation unit

@@ -1,0 +1,30 @@
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
+
+ 
+
+@RunWith(Parameterized.class)
+public class FibonacciIndexTests extends FibonacciIndexerBaseTests {
+
+	public FibonacciIndexTests(int expectedIndex, long fibonacci) {
+		this.expectedIndex = expectedIndex;
+		this.fibonacci = fibonacci;
+		indexer = new FibonacciIndexer();
+	}	
+	
+
+	@Test
+	public void whenNumberNotFoundThenIndexIsMinusOne() {
+		assertEquals(-1, indexer.findIndexOf(7));
+	}
+	
+	@Test
+	public void cannotFindIndexOfNegativeNumber() {
+		assertEquals(-1, indexer.findIndexOf(-1));
+	}
+
+
+}

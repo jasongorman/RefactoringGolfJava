@@ -1,0 +1,14 @@
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+
+public class FootballScoreStatsTests {
+
+	@Test
+	public void totalsFootballScoresForTeam() {
+		FootballScoreStats stats = new FootballScoreStats();
+		assertEquals(22, stats.teamTotal("Liverpool FC"));
+	}
+
+}

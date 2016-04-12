@@ -1,0 +1,18 @@
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+
+public class FibonacciIndexTests {
+
+	@Test
+	public void indexOfZeroIsZero() {
+		assertEquals(0, findIndexOf(0));
+	}
+	
+
+	private int findIndexOf(int fibonacci) {
+		return 0;
+	}
+
+}

@@ -1,0 +1,9 @@
+
+public class Sorter {
+
+	public int[] sort(SortKind bubble, int[] input) {
+		// TODO Auto-generated method stub
+		return array;
+	}
+
+}

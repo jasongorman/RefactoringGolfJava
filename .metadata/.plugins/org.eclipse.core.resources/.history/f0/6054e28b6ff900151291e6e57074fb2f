@@ -1,0 +1,9 @@
+
+public class FootballScoreStats {
+
+	public int teamTotal(String teamName) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

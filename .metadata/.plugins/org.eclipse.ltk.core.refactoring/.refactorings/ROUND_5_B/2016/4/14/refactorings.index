@@ -1,0 +1,10 @@
+1459842048565	Extract local variable 'expected'
+1459842070634	Convert local variable 'expected' to field
+1459842135524	Rename field 'expected'
+1459842153838	Rename method 'rootOfOneIsOne'
+1459845678322	Introduce parameter for 'MathsTests'
+1459847846392	Extract local variable 'expected'
+1459847897484	Convert local variable 'expected' to field
+1459847906854	Rename field 'expected'
+1459847976911	Introduce parameter for 'MathsTests'
+1459848042784	Rename method 'rootOfOneIsOne'

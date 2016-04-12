@@ -1,0 +1,23 @@
+
+public class FootballScoreStats {
+
+	public int teamTotal(String teamName) {
+		int total = 0;
+		Game[] played = FootballData.getAllPlayed();
+		for (Game game : played) {
+			total += getTeamScore(teamName, total, game);
+		}
+		return total;
+	}
+
+	private int getTeamScore(String teamName, int total, Game game) {
+		if(game.getHomeTeam().equals(teamName)){
+			total = game.getHomeTeamScore();
+		}
+		if(game.getAwayTeam().equals(teamName)){
+			total = game.getAwayTeamScore();
+		}
+		return total;
+	}
+
+}

@@ -1,0 +1,29 @@
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+
+public class LibraryTests {
+
+	@Test
+	public void donatedTitlesAreAddedToLibraryWithOneDefaultCopy() {
+		Library library = new Library();
+		String titleName = "Jaws 3D";
+		String donorMembershipId = "Jason123";
+		library.donate(titleName, donorMembershipId );
+		Object[] donatedTitle = library.getTitles().get(titleName);
+		assertEquals(titleName, getTitleName(donatedTitle));
+		assertEquals(donorMembershipId, getDonor(donatedTitle));
+		assertEquals(1, (int)donatedTitle[2]);
+		assertEquals(1, library.getTitlesDonatedByMember(donorMembershipId).size());
+	}
+
+	private String getDonor(Object[] title) {
+		return (String)title[1];
+	}
+
+	private String getTitleName(Object[] title) {
+		return (String) title[0];
+	}
+
+}

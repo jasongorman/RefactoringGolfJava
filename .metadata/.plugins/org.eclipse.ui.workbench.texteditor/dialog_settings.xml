@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="732" key="DIALOG_WIDTH"/>
+		<item value="476" key="DIALOG_Y_ORIGIN"/>
+		<item value="1014" key="DIALOG_X_ORIGIN"/>
+		<item value="444" key="DIALOG_HEIGHT"/>
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="true" key="wrap"/>
+		<item value="false" key="casesensitive"/>
+		<item value="false" key="isRegEx"/>
+		<item value="false" key="incremental"/>
+		<item value="false" key="wholeword"/>
+		<item value="&quot;Jason123&quot;" key="selection"/>
+		<list key="findhistory">
+			<item value="donorMembershipId"/>
+			<item value="Object[]"/>
+			<item value="copyCount"/>
+			<item value="(int)title[2]"/>
+			<item value="(String) title[0]"/>
+			<item value="(String)title[1]"/>
+			<item value="getCopyCount"/>
+			<item value="getDonor"/>
+		</list>
+		<list key="replacehistory">
+			<item value="&quot;Jason123&quot;"/>
+			<item value="Title"/>
+			<item value="copyCount = 1"/>
+			<item value="copyCount"/>
+			<item value="name"/>
+			<item value="donorId"/>
+			<item value="title.getCopyCount"/>
+			<item value="title.getDonor"/>
+		</list>
+	</section>
+</section>

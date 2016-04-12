@@ -1,0 +1,25 @@
+
+public class Sorter {
+
+	public int[] sort(SortKind bubble, int[] input) {
+		boolean sorted = false;
+		while(!sorted){
+			sorted = true;
+			for (int i = 0; i < input.length - 1; i++) {
+				if(input[i] > input[i+1]){
+					swap(input, i, i+1);
+					sorted = false;
+				}
+			}
+		}
+		return input;
+	}
+	
+	private void swap(int[] input, int index1, int index2) {
+		int first = input[index1];
+		int second = input[index2];
+		input[index1] = second;
+		input[index2] = first;
+	}
+
+}

@@ -1,0 +1,22 @@
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+
+public class LibraryTests extends Title {
+
+	@Test
+	public void donatedTitlesAreAddedToLibraryWithOneDefaultCopy() {
+		Library library = new Library();
+		String titleName = "Jaws 3D";
+		String donorMembershipId = "Jason123";
+		library.donate(titleName, donorMembershipId );
+		Object[] donatedTitle = library.getTitles().get(titleName);
+		Title title = new Title();
+		assertEquals(titleName, title.getTitleName(donatedTitle));
+		assertEquals(donorMembershipId, title.getDonor(donatedTitle));
+		assertEquals(1, getCopyCount(donatedTitle));
+		assertEquals(1, library.getTitlesDonatedByMember(donorMembershipId).size());
+	}
+
+}

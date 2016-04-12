@@ -1,0 +1,54 @@
+import static org.junit.Assert.*;
+
+import java.util.Arrays;
+import java.util.List;
+
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
+import org.junit.runners.Parameterized.Parameters;
+
+ 
+
+@RunWith(Parameterized.class)
+public class FibonacciIndexTests {
+
+	private final int expectedIndex;
+	private final int fibonacci;
+
+
+	public FibonacciIndexTests(int expectedIndex, int fibonacci) {
+		this.expectedIndex = expectedIndex;
+		this.fibonacci = fibonacci;
+	}	
+	
+
+	@Parameters
+	public static List<Object[]> data() {
+		return Arrays.asList(new Object[][] { { 0,0 } });
+	}
+
+	@Test
+	public void indexOfZeroIsZero() {
+		assertEquals(expectedIndex, findIndexOf(fibonacci));
+	}
+	
+	@Test
+	public void indexOfOneIsOne() {
+		assertEquals(1, findIndexOf(1));
+	}
+	
+	@Test
+	public void indexOfTwoIsThree() {
+		assertEquals(3, findIndexOf(2));
+	}
+	
+
+	private int findIndexOf(int fibonacci) {
+		if(fibonacci < 2){
+			return fibonacci;
+		} 
+		return 3;
+	}
+
+}

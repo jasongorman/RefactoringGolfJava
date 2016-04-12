@@ -1,0 +1,64 @@
+import static org.junit.Assert.*;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
+import org.junit.runners.Parameterized.Parameters;
+
+ 
+
+@RunWith(Parameterized.class)
+public class FibonacciIndexTests {
+
+	private final int expectedIndex;
+	private final int fibonacci;
+
+
+	public FibonacciIndexTests(int expectedIndex, int fibonacci) {
+		this.expectedIndex = expectedIndex;
+		this.fibonacci = fibonacci;
+	}	
+	
+
+	@Parameters
+	public static List<Object[]> data() {
+		return Arrays.asList(new Object[][] { 
+				{ 0,0 }, {1,1}, {3,2}, {4,3}, {5,5}
+			});
+	}
+
+	@Test
+	public void findsIndexOfFibonacciNumber() {
+		assertEquals(expectedIndex, findIndexOf(fibonacci));
+	}
+	
+	@Test
+	public void ifFibonacciNumberNotFoundThenIndexIsMinusOne() {
+		assertEquals(-1, findIndexOf(7));
+	}
+
+	private int findIndexOf(int fibonacci) {
+		if(fibonacci < 2){
+			return fibonacci;
+		}
+		int indexOfFibonacci = -1;
+		int currentIndex = 2;
+		int f = 0;
+		List<Integer> sequence = new ArrayList<Integer>();
+		sequence.addAll(Arrays.asList(new Integer[]{0,1}));
+		while(f < fibonacci){
+			f = sequence.get(currentIndex - 1) + sequence.get(currentIndex - 2);
+			if(f == fibonacci)
+				indexOfFibonacci = currentIndex;
+			sequence.add(f);
+			currentIndex++;
+		}
+ 
+		return indexOfFibonacci;
+	}
+
+}

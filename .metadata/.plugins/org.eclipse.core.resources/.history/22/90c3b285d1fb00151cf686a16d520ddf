@@ -1,0 +1,19 @@
+public class Title {
+
+	public Title(String name, String donorId) {
+		super();
+	}
+
+	protected int getCopyCount(Object[] title) {
+		return (int)title[2];
+	}
+
+	protected String getDonor(Object[] title) {
+		return (String)title[1];
+	}
+
+	protected String getTitleName(Object[] title) {
+		return (String) title[0];
+	}
+
+}

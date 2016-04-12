@@ -1,0 +1,10 @@
+public class Member {
+
+	protected final String donorMembershipId;
+
+	public Member(String id) {
+		donorMembershipId = id;
+		// TODO Auto-generated constructor stub
+	}
+
+}

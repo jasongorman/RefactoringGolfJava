@@ -1,0 +1,13 @@
+1459669935334	Extract method 'getTeamScore'
+1459669967597	Change method 'getTeamScore'
+1459670023070	Move method 'getTeamScore'
+1459670182398	Extract local variable 'footballData'
+1459670195242	Convert local variable 'footballData' to field
+1459670223049	Introduce parameter for 'FootballScoreStats'
+1459670275257	Extract interface 'GameData'
+1459670310344	Rename local variable 'data'
+1459670315834	Rename local variable 'gameDayta'
+1459670353195	Inline method 'getHomeTeam'
+1459670362652	Inline method 'getHomeTeamScore'
+1459670373851	Inline method 'getAwayTeam'
+1459670382468	Inline method 'getAwayTeamScore'

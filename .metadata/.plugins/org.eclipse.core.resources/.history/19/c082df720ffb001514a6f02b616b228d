@@ -1,0 +1,50 @@
+import static org.junit.Assert.*;
+
+import java.util.Arrays;
+import java.util.List;
+
+import org.junit.Test;
+import org.junit.runners.Parameterized.Parameters;
+
+
+public class MathsTests {
+
+	private final double number;
+
+	public MathsTests() {
+		number = 1;
+	}
+	
+	
+
+	@Parameters
+	public static List<Object[]> data() {
+		return Arrays.asList(new Object[][] { { 1 } });
+	}
+
+	@Test
+	public void rootOfOneIsOne() {
+		assertEquals(number, Maths.sqrroot(number) * Maths.sqrroot(number), 1e-15);
+	}
+	
+	@Test
+	public void rootOfFourIsTwo() {
+		assertEquals(2, Maths.sqrroot(4), 1e-15);
+	}
+	
+	@Test
+	public void rootOfNineIsThree() {
+		assertEquals(3, Maths.sqrroot(9), 1e-15);
+	}
+	
+	@Test
+	public void rootOfSixteenIsFour() {
+		assertEquals(4, Maths.sqrroot(16), 1e-15);
+	}
+	
+	@Test
+	public void rootOfTwoFiveIsPointFive() {
+		assertEquals(0.5, Maths.sqrroot(0.25), 1e-15);
+	}
+	
+}

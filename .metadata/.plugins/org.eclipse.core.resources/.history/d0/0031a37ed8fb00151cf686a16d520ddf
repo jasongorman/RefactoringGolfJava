@@ -1,0 +1,19 @@
+import java.util.List;
+
+public class Member {
+
+	protected final String membershipId;
+
+	public Member(String id) {
+		membershipId = id;
+	}
+	
+	public String getId() {
+		return membershipId;
+	}
+
+	public List<Title> getDonatedTitles() {
+		return null;
+	}
+
+}

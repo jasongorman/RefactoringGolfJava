@@ -1,0 +1,11 @@
+import java.util.Map;
+
+
+public class Library {
+
+	public Map<String, Object[]> getTitles() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

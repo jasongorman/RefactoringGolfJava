@@ -1,0 +1,8 @@
+
+public class Game {
+
+	public Game(String homeTeam, int homeTeamScore, String awayTeam, int awayTeamScore) {
+		// TODO Auto-generated constructor stub
+	}
+
+}
